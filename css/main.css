@@ -1,3 +1,175 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
 
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.calculator {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.calculator-buttons {
+  height: 600px;
+  width: 400px;
+  display: grid;
+  grid-template-areas: "FAC EUC PIE PHI BCC" "ROU SNV CNV TNV ACC" "POW SIN COS TAN DIV" "XNV PER PRO PRC MUL" "XSQ SEV EIG NIN SUB" "LG2 FOU FIV SIX ADD" "LG1 ONE TWO THR EQU" "NLG PMM ZEO DEC EQU";
+}
+
+#factorial {
+  grid-area: FAC;
+}
+
+#euclidean {
+  grid-area: EUC;
+}
+
+#pi {
+  grid-area: PIE;
+}
+
+#phi {
+  grid-area: PHI;
+}
+
+#backspace {
+  grid-area: BCC;
+}
+
+#square-route {
+  grid-area: ROU;
+}
+
+#sine-inverse {
+  grid-area: SNV;
+}
+
+#cosine-inverse {
+  grid-area: CNV;
+}
+
+#tan-inverse {
+  grid-area: TNV;
+}
+
+#clear {
+  grid-area: ACC;
+}
+
+#power {
+  grid-area: POW;
+}
+
+#sine {
+  grid-area: SIN;
+}
+
+#cosine {
+  grid-area: COS;
+}
+
+#tangent {
+  grid-area: TAN;
+}
+
+#divide {
+  grid-area: DIV;
+}
+
+#x-inverse {
+  grid-area: XNV;
+}
+
+#percentage {
+  grid-area: PER;
+}
+
+#parenthesis-open {
+  grid-area: PRO;
+}
+
+#parenthesis-close {
+  grid-area: PRC;
+}
+
+#multiply {
+  grid-area: MUL;
+}
+
+#x-squared {
+  grid-area: XSQ;
+}
+
+#seven {
+  grid-area: SEV;
+}
+
+#eight {
+  grid-area: EIG;
+}
+
+#nine {
+  grid-area: NIN;
+}
+
+#subtract {
+  grid-area: SUB;
+}
+
+#log-two {
+  grid-area: LG2;
+}
+
+#four {
+  grid-area: FOU;
+}
+
+#five {
+  grid-area: FIV;
+}
+
+#six {
+  grid-area: SIX;
+}
+
+#log-ten {
+  grid-area: LG1;
+}
+
+#one {
+  grid-area: ONE;
+}
+
+#two {
+  grid-area: TWO;
+}
+
+#three {
+  grid-area: THR;
+}
+
+#equal {
+  grid-area: EQU;
+}
+
+#natural-log {
+  grid-area: NLG;
+}
+
+#plus-minus {
+  grid-area: PMM;
+}
+
+#zero {
+  grid-area: ZEO;
+}
+
+#decimal {
+  grid-area: DEC;
+}
 
 /*# sourceMappingURL=main.css.map */
