@@ -73,6 +73,7 @@
   --clr-neutral-700: hsla(0, 0%, 19%, 100%);
   --clr-neutral-800: hsla(0, 0%, 7%, 100%);
 
+  --clr-augmented-000: hsla(210, 15%, 88%, 100%);
   --clr-augmented-100: hsla(210, 15%, 58%, 100%);
   --clr-augmented-200: hsla(210, 11%, 50%, 100%);
   --clr-augmented-300: hsla(210, 11%, 36%, 100%);
@@ -102,7 +103,7 @@
 
   --ls-letter-spacing: 1px;
 
-  --br-border-radius: 13px;
+  --br-border-radius: 5px;
 }
 
 html {
@@ -132,7 +133,7 @@ body {
   font-size: 1rem;
   letter-spacing: var(--ls-letter-spacing);
   color: var(--clr-augmented-400);
-  background-image: radial-gradient(circle, var(--clr-primary-100) 28%, var(--clr-primary-200) 100%);
+  background-image: radial-gradient(circle, var(--clr-neutral-100) 28%, var(--clr-augmented-000) 100%);
   transition: filter 0.5s;
 }
 
@@ -197,7 +198,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 400px;
+  width: 420px;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translate(-50%,-50%);
@@ -212,6 +213,8 @@ body {
   justify-content: space-between;
   padding: 16px;
   background-color: var(--clr-neutral-300);
+  border-top-left-radius: var(--br-border-radius);
+  border-top-right-radius: var(--br-border-radius);
 
 }
 
@@ -261,7 +264,7 @@ body {
 
 .calculator-buttons {
   height: 600px;
-  width: 400px;
+  width: 420px;
   display: grid;
   grid-template-areas:
     'FAC EUC PIE PHI ACC'
@@ -276,9 +279,12 @@ body {
 }
 
 .calculator-button {
+
+  width: 84px;
   font-family: var(--ff-font-number);
   font-weight: var(--fw-font-weight-700) !important;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .number-btn {
@@ -482,12 +488,14 @@ body {
   font-size: 32px;
   background-color: var(--clr-assigned-03);
   color: var(--clr-assigned-12);
+  border-bottom-right-radius: var(--br-border-radius);
 }
 
 #natural-log {
   grid-area: NLG;
   background-color: var(--clr-assigned-13);
   color: var(--clr-assigned-12);
+  border-bottom-left-radius: var(--br-border-radius);
 }
 
 #plus-minus {
